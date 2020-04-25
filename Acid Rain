@@ -1,0 +1,31 @@
+/*
+ * Justin Mendes
+ * October 10, 2016
+ * Unit 3 Activity 7 Program/Question 1
+ * Displays a title and some introductory information about acid rain on the screen. The program should then ask for a pH to be entered and determine the risk for fish. 
+ */
+import javax.swing.JOptionPane;
+public class acidrain
+{
+	public static void main(String[] args)
+	{
+		//Variable Declaration and Initialization
+		double value = Double.parseDouble(JOptionPane.showInputDialog(null,"Type in a pH-value and I will tell you what happens to the fish...", "Input", JOptionPane.QUESTION_MESSAGE));
+		System.out.println("'ACID RAIN CONCERN' PROGRAM\n");
+		System.out.println("Acid rain is detrimental to several environments,");
+		System.out.println("most notably the aquatic environment.");
+		System.out.println("It is caused by rotting vegetation and volcanic eruptions,");
+		System.out.println("but the most influential factor is human activity such as burning fossil fuels.\n");
+		System.out.println("This program is designed to determine the risk on fish within water systems.\n");
+		System.out.println("Type in a pH-value and I will tell you what happens to the fish...\n");
+		System.out.println(value + "\n");
+		switch (value)
+		{
+		case value >= 6.5 && value <= 7.5: System.out.println("NEUTRAL - FISH IN STREAMS, RIVERS AND LAKES WILL SURVIVE.");
+		break;
+		case value < 6.5: System.out.println("TOO ACID - FISH IN STREAMS, RIVERS AND LAKES WILL NOT SURVIVE.");
+		break;
+		default: System.out.println("TOO ALKALINE - FISH IN STREAMS, RIVERS AND LAKES WILL NOT SURVIVE.");
+		}
+	}//end main
+}//end class
