@@ -1,2 +1,2 @@
 # compsci
-Programs from Grade 11 and Grade 12 in Java - displaying logical capabilities and Java programming experience
+Programs from Grade 11 and Grade 12 in Java - displaying logical capabilities and Java programming experience - with Object-Oriented Programming
